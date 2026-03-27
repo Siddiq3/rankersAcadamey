@@ -24,6 +24,10 @@ export default function HeroSection({ onOpenEnquiry }) {
             {siteContent.heroSubtitle}
           </p>
 
+          <div className="mt-6 max-w-2xl rounded-[1.3rem] border border-brand-gold/25 bg-white/80 p-4 shadow-soft">
+            <p className="text-sm leading-7 text-brand-slate">{siteContent.brochureText}</p>
+          </div>
+
           <div className="mt-8 flex flex-wrap gap-3">
             <ActionButton as="button" onClick={onOpenEnquiry} type="button" variant="accent">
               Enroll Now

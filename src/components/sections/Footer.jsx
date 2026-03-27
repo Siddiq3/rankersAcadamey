@@ -21,6 +21,14 @@ export default function Footer({ whatsappLink }) {
             <MessageCircle className="h-4 w-4 text-[#1F9D55]" />
             WhatsApp Admissions Desk
           </a>
+          <a
+            className="text-sm text-brand-slate transition hover:text-brand-navy"
+            href={siteContent.developer.instagram}
+            rel="noreferrer"
+            target="_blank"
+          >
+            Developed by <span className="font-semibold text-brand-blue">{siteContent.developer.name}</span>
+          </a>
           <div>(c) 2026 Rankers Academy Kuppam. All rights reserved.</div>
         </div>
       </div>

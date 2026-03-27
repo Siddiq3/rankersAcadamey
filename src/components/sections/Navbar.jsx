@@ -57,14 +57,6 @@ export default function Navbar({
           </nav>
 
           <div className="hidden items-center gap-4 lg:flex">
-            <a
-              className="text-xs font-medium text-brand-slate transition hover:text-brand-navy"
-              href={siteContent.developer.instagram}
-              rel="noreferrer"
-              target="_blank"
-            >
-              Developed by <span className="font-semibold text-brand-blue">{siteContent.developer.name}</span>
-            </a>
             <ActionButton href={phoneLink} variant="secondary">
               Call Now
             </ActionButton>
@@ -104,14 +96,6 @@ export default function Navbar({
                   {link.label}
                 </a>
               ))}
-              <a
-                className="rounded-2xl border border-brand-navy/10 px-4 py-3 text-sm font-medium text-brand-slate transition hover:text-brand-navy"
-                href={siteContent.developer.instagram}
-                rel="noreferrer"
-                target="_blank"
-              >
-                Developed by <span className="font-semibold text-brand-blue">{siteContent.developer.name}</span>
-              </a>
               <ActionButton href={phoneLink} variant="secondary">
                 Call Now
               </ActionButton>

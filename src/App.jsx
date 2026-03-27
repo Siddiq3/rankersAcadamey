@@ -6,8 +6,10 @@ import AdmissionModal from "./components/sections/AdmissionModal.jsx";
 import AboutSection from "./components/sections/AboutSection.jsx";
 import ContactSection from "./components/sections/ContactSection.jsx";
 import CoursesSection from "./components/sections/CoursesSection.jsx";
+import FacultySection from "./components/sections/FacultySection.jsx";
 import Footer from "./components/sections/Footer.jsx";
 import HeroSection from "./components/sections/HeroSection.jsx";
+import InstitutionalProofSection from "./components/sections/InstitutionalProofSection.jsx";
 import Navbar from "./components/sections/Navbar.jsx";
 import ResultsSection from "./components/sections/ResultsSection.jsx";
 import ScholarshipSection from "./components/sections/ScholarshipSection.jsx";
@@ -59,11 +61,13 @@ export default function App() {
 
       <main>
         <HeroSection onOpenEnquiry={openEnquiry} />
+        <InstitutionalProofSection />
         <ResultsSection onOpenEnquiry={openEnquiry} />
         <CoursesSection onOpenEnquiry={openEnquiry} />
         <ScholarshipSection onOpenEnquiry={openEnquiry} phoneLink={phoneLink} />
         <TalentTestSection onOpenEnquiry={openEnquiry} phoneLink={phoneLink} />
         <WhyChooseUsSection />
+        <FacultySection onOpenEnquiry={openEnquiry} />
         <AboutSection onOpenEnquiry={openEnquiry} />
         <TestimonialsSection />
         <FinalCTA onOpenEnquiry={openEnquiry} phoneLink={phoneLink} />

@@ -1,6 +1,7 @@
 export const navLinks = [
   { label: "Results", href: "#results" },
   { label: "Programs", href: "#courses" },
+  { label: "Faculty", href: "#faculty" },
   { label: "Talent Test", href: "#talent-test" },
   { label: "Why Us", href: "#why-us" },
   { label: "Testimonials", href: "#testimonials" },
@@ -13,12 +14,12 @@ export const siteContent = {
   tagline: "Smart way to Success",
   focusLine: "Navodaya | Sainik | RMS",
   trustLine: "Trusted Coaching for Navodaya, Sainik & RMS",
-  heroTitle: "Build a Strong Future with the Right Guidance",
+  heroTitle: "Shape a Strong Future with Focused Academic Guidance",
   heroSubtitle:
-    "Admissions Open for Navodaya, Sainik School and RMS coaching with proven student results, expert teaching, weekly tests, and scholarship opportunities.",
+    "Admissions open for Navodaya, Sainik School and RMS coaching with disciplined teaching, small-batch guidance, weekly testing, visible results and scholarship opportunities.",
   locationShort: "Near Gandhi Statue, BSNL Office Road, Kuppam",
   address: "Near Gandhi Statue, BSNL Office Road, Kuppam - 517425",
-  phones: ["9676356670", "9885269211", "9705116606"],
+  phones: ["9676356670", "9885269211"],
   whatsappNumber: "919676356670",
   heroTrustChips: [
     "Proven Results",
@@ -26,6 +27,8 @@ export const siteContent = {
     "Scholarship Test",
     "Parent Trusted",
   ],
+  brochureText:
+    "Get the 2026 admission plan, course structure and talent test details in one quick enquiry.",
   floatingStats: [
     { value: "34", label: "RMS Selections" },
     { value: "55", label: "Sainik Selections" },
@@ -42,6 +45,25 @@ export const siteContent = {
   admissionsNote:
     "Limited seats are open for the new academic batch. Parents can call, WhatsApp or submit a quick enquiry.",
 };
+
+export const institutionalProof = [
+  {
+    title: "Structured Test Series",
+    description: "Weekly testing keeps students accountable, prepared and exam-ready.",
+  },
+  {
+    title: "Parent Communication",
+    description: "Clear updates and progress feedback build confidence beyond the classroom.",
+  },
+  {
+    title: "Concept-first Guidance",
+    description: "The academy focuses on basics, clarity and disciplined revision instead of memorization alone.",
+  },
+  {
+    title: "Local Trust, Premium Standard",
+    description: "A Kuppam-based academy presented with the clarity and seriousness of a top brand.",
+  },
+];
 
 export const resultsSummary = [
   { value: 34, suffix: "", label: "RMS students selected" },
@@ -202,6 +224,27 @@ export const aboutAcademy = {
     "Performance tracking and feedback",
   ],
 };
+
+export const faculty = [
+  {
+    name: "Academic Mentor Team",
+    credential: "Competitive School Entrance Specialists",
+    focus: "Navodaya, Sainik and RMS preparation planning",
+    teachingStyle: "Concept clarity, worksheet practice and steady monitoring.",
+  },
+  {
+    name: "Mathematics Faculty",
+    credential: "Foundation and Exam Strategy Guidance",
+    focus: "Speed building, accuracy and problem-solving confidence",
+    teachingStyle: "Simple explanations with repeated practice and revision loops.",
+  },
+  {
+    name: "English & IQ Faculty",
+    credential: "Language and Reasoning Support",
+    focus: "Reading, logic and test confidence for entrance performance",
+    teachingStyle: "Pattern-based teaching with student-friendly doubt support.",
+  },
+];
 
 export const testimonials = [
   {
