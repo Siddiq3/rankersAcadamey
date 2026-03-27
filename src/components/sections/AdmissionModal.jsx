@@ -47,25 +47,25 @@ export default function AdmissionModal({ onClose, open, phoneLink }) {
               <X className="h-5 w-5" />
             </button>
 
-            <div className="eyebrow">Admissions / Talent Test</div>
+            <div className="eyebrow">Admissions / టాలెంట్ టెస్ట్</div>
             <h3 className="mt-6 font-display text-3xl font-bold text-brand-navy sm:text-4xl">
-              Request Admission or Talent Test Details
+              అడ్మిషన్ లేదా టాలెంట్ టెస్ట్ వివరాలు అడగండి
             </h3>
             <p className="mt-4 text-sm leading-7 text-brand-slate sm:text-base">
-              Parents can submit a quick enquiry here without leaving the landing page. The current frontend-only form behavior remains unchanged and is ready for backend integration later.
+              ఈ పేజీ వదిలి వెళ్లకుండా మీ వివరాలు ఇక్కడే పంపవచ్చు. ఫోన్ ద్వారా మిమ్మల్ని తిరిగి సంప్రదించడానికి ఈ ఫారమ్ ఉపయోగపడుతుంది.
             </p>
 
             <div className="mt-8">
-              <LeadForm submitLabel="Submit Enquiry" />
+              <LeadForm submitLabel="Enquiry పంపండి" />
             </div>
 
             <div className="mt-6 flex flex-wrap gap-3">
               <ActionButton href={phoneLink} variant="secondary">
                 <Phone className="h-4 w-4" />
-                Call Admission Desk
+                కాల్ చేయండి
               </ActionButton>
               <ActionButton as="button" onClick={onClose} type="button" variant="accent">
-                Continue Browsing
+                పేజీకి తిరిగి వెళ్ళండి
               </ActionButton>
             </div>
           </motion.div>

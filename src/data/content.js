@@ -1,11 +1,10 @@
 export const navLinks = [
-  { label: "Results", href: "#results" },
-  { label: "Programs", href: "#courses" },
-  { label: "Faculty", href: "#faculty" },
-  { label: "Talent Test", href: "#talent-test" },
-  { label: "Why Us", href: "#why-us" },
-  { label: "Testimonials", href: "#testimonials" },
-  { label: "Contact", href: "#contact" },
+  { label: "ఫలితాలు", href: "#results" },
+  { label: "కోర్సులు", href: "#courses" },
+  { label: "టాలెంట్ టెస్ట్", href: "#scholarship" },
+  { label: "ఎందుకు మేమే?", href: "#why-us" },
+  { label: "అభిప్రాయాలు", href: "#testimonials" },
+  { label: "సంప్రదించండి", href: "#contact" },
 ];
 
 export const siteContent = {
@@ -14,60 +13,42 @@ export const siteContent = {
   tagline: "Smart way to Success",
   focusLine: "Navodaya | Sainik | RMS",
   trustLine: "Trusted Coaching for Navodaya, Sainik & RMS",
-  heroTitle: "Shape a Strong Future with Focused Academic Guidance",
-  heroSubtitle:
-    "Admissions open for Navodaya, Sainik School and RMS coaching with disciplined teaching, small-batch guidance, weekly testing, visible results and scholarship opportunities.",
+  heroTitleEnglish: "Your Child’s Future Starts Here",
+  heroTitleTelugu: "మీ పిల్లల భవిష్యత్తుకు సరైన మార్గదర్శకం",
+  heroSubtitleEnglish: "Admissions Open for Navodaya, Sainik & RMS Coaching",
+  heroSubtitleTelugu: "నవోదయ, సైనిక్, RMS ప్రవేశాలు ప్రారంభం",
+  heroSupportEnglish: "Expert faculty, weekly tests, and proven results.",
+  heroSupportTelugu: "అనుభవజ్ఞులైన టీచర్లు, వారాంత పరీక్షలు, అద్భుత ఫలితాలు",
   locationShort: "Near Gandhi Statue, BSNL Office Road, Kuppam",
   address: "Near Gandhi Statue, BSNL Office Road, Kuppam - 517425",
   phones: ["9676356670", "9885269211"],
   whatsappNumber: "919676356670",
   heroTrustChips: [
-    "Proven Results",
-    "Expert Faculty",
-    "Scholarship Test",
-    "Parent Trusted",
+    "Proven Results | అద్భుత ఫలితాలు",
+    "Expert Faculty | అనుభవజ్ఞులు",
+    "Weekly Tests | వారాంత పరీక్షలు",
+    "Scholarship Test | టాలెంట్ టెస్ట్",
   ],
-  brochureText:
-    "Get the 2026 admission plan, course structure and talent test details in one quick enquiry.",
   floatingStats: [
     { value: "34", label: "RMS Selections" },
     { value: "55", label: "Sainik Selections" },
   ],
   heroHighlights: [
-    { value: 34, suffix: "", label: "RMS students selected" },
-    { value: 55, suffix: "", label: "Sainik students selected" },
-    { value: 10, suffix: "+", label: "Years of focused guidance" },
+    { value: 34, suffix: "", label: "RMS Selections" },
+    { value: 55, suffix: "", label: "Sainik Selections" },
+    { value: 10, suffix: "+", label: "Years Guidance" },
   ],
   developer: {
     name: "Siddiq Kolimi",
-    instagram: "https://www.instagram.com/siddiqkolimi/",
+    phone: "9705116606",
   },
   admissionsNote:
-    "Limited seats are open for the new academic batch. Parents can call, WhatsApp or submit a quick enquiry.",
+    "Limited Seats | పరిమిత సీట్లు",
 };
 
-export const institutionalProof = [
-  {
-    title: "Structured Test Series",
-    description: "Weekly testing keeps students accountable, prepared and exam-ready.",
-  },
-  {
-    title: "Parent Communication",
-    description: "Clear updates and progress feedback build confidence beyond the classroom.",
-  },
-  {
-    title: "Concept-first Guidance",
-    description: "The academy focuses on basics, clarity and disciplined revision instead of memorization alone.",
-  },
-  {
-    title: "Local Trust, Premium Standard",
-    description: "A Kuppam-based academy presented with the clarity and seriousness of a top brand.",
-  },
-];
-
 export const resultsSummary = [
-  { value: 34, suffix: "", label: "RMS students selected" },
-  { value: 55, suffix: "", label: "Sainik students selected" },
+  { value: 34, suffix: "", label: "RMS Selections" },
+  { value: 55, suffix: "", label: "Sainik Selections" },
 ];
 
 export const achievers = [
@@ -75,49 +56,49 @@ export const achievers = [
     name: "Rohantej Yadav",
     initials: "RY",
     program: "RMS",
-    resultLabel: "Selected in RMS Track",
-    hallTicket: "Hall Ticket: RAK-RMS-014",
-    rank: "Result: Merit Highlight",
+    resultLabel: "RMS Selection",
+    hallTicket: "RAK-RMS-014",
+    rank: "Merit Highlight",
   },
   {
     name: "Naudeep Naik",
     initials: "NN",
     program: "Sainik",
-    resultLabel: "Sainik Achiever",
-    hallTicket: "Hall Ticket: RAK-SNK-021",
-    rank: "Result: Strong Entrance Score",
+    resultLabel: "Sainik Selection",
+    hallTicket: "RAK-SNK-021",
+    rank: "Strong Entrance Score",
   },
   {
     name: "Rushi Ruthvik",
     initials: "RR",
     program: "Navodaya",
-    resultLabel: "Navodaya Result Highlight",
-    hallTicket: "Hall Ticket: RAK-NVD-032",
-    rank: "Result: Shortlisted Performer",
+    resultLabel: "Navodaya Result",
+    hallTicket: "RAK-NVD-032",
+    rank: "Shortlisted Performer",
   },
   {
     name: "Jatin",
     initials: "JA",
     program: "Sainik",
     resultLabel: "Selection Highlight",
-    hallTicket: "Hall Ticket: RAK-SNK-018",
-    rank: "Result: Top Preparation Batch",
+    hallTicket: "RAK-SNK-018",
+    rank: "Top Preparation Batch",
   },
   {
     name: "Darshik",
     initials: "DA",
     program: "RMS",
-    resultLabel: "RMS Merit Highlight",
-    hallTicket: "Hall Ticket: RAK-RMS-026",
-    rank: "Result: Consistent Tester",
+    resultLabel: "RMS Merit",
+    hallTicket: "RAK-RMS-026",
+    rank: "Consistent Tester",
   },
   {
     name: "Lishanth Naik",
     initials: "LN",
     program: "Navodaya",
-    resultLabel: "Achiever Card",
-    hallTicket: "Hall Ticket: RAK-NVD-011",
-    rank: "Result: Parent Trusted Batch",
+    resultLabel: "Navodaya Achiever",
+    hallTicket: "RAK-NVD-011",
+    rank: "Parent Trusted Batch",
   },
 ];
 
@@ -125,156 +106,114 @@ export const courses = [
   {
     title: "Navodaya Coaching",
     icon: "book-open",
-    description:
-      "Concept-led preparation for students aiming to enter Navodaya with confidence, speed and exam discipline.",
+    description: "బేసిక్స్ నుండి అడ్వాన్స్ వరకు పూర్తి శిక్షణ",
     benefits: [
-      "Weekly tests",
-      "Foundation building",
-      "Exam strategy",
-      "Personal attention",
+      "Weekly Tests",
+      "Personal Attention",
+      "Exam Strategy",
     ],
-    cta: "Join This Program",
+    cta: "Join Now | చేరండి",
+    callCta: "Call for Details | వివరాలు",
   },
   {
-    title: "Sainik School Coaching",
+    title: "Sainik Coaching",
     icon: "shield",
-    description:
-      "Structured coaching that combines subject strength, discipline and repeated practice for Sainik aspirants.",
+    description: "బేసిక్స్ నుండి అడ్వాన్స్ వరకు పూర్తి శిక్షణ",
     benefits: [
-      "Weekly tests",
-      "Strong basics foundation",
-      "Exam strategy",
-      "Personal attention",
+      "Weekly Tests",
+      "Personal Attention",
+      "Exam Strategy",
     ],
-    cta: "Join This Program",
+    cta: "Join Now | చేరండి",
+    callCta: "Call for Details | వివరాలు",
   },
   {
     title: "RMS Coaching",
     icon: "target",
-    description:
-      "Focused classroom support for Rashtriya Military School aspirants with clear tracking and guided revision.",
+    description: "బేసిక్స్ నుండి అడ్వాన్స్ వరకు పూర్తి శిక్షణ",
     benefits: [
-      "Weekly tests",
-      "Foundation building",
-      "Exam strategy",
-      "Personal attention",
+      "Weekly Tests",
+      "Personal Attention",
+      "Exam Strategy",
     ],
-    cta: "Join This Program",
+    cta: "Join Now | చేరండి",
+    callCta: "Call for Details | వివరాలు",
   },
 ];
 
 export const scholarshipPrizes = [
-  { title: "1st Prize", value: "Rs 5000 + Medal" },
-  { title: "2nd Prize", value: "Rs 3000 + Medal" },
-  { title: "3rd Prize", value: "Rs 2000 + Medal" },
+  { title: "1st Prize", value: "₹5000 + Medal" },
+  { title: "2nd Prize", value: "₹3000 + Medal" },
+  { title: "3rd Prize", value: "₹2000 + Medal" },
 ];
 
 export const talentTest = {
-  heading: "Talent Test 2026",
-  subheading: "Win scholarships and medals through our academy talent test.",
+  headingEnglish: "Talent Test 2026",
+  headingTelugu: "టాలెంట్ టెస్ట్ 2026",
+  subheadingEnglish: "Win scholarships and medals.",
+  subheadingTelugu: "స్కాలర్‌షిప్, మెడల్స్ గెలుచుకునే మంచి అవకాశం",
   date: "29-03-2026",
-  time: "10:00 AM to 12:00 PM",
+  time: "10 AM - 12 PM",
   venue: "Rankers Academy, Kuppam",
   subjects: ["Maths", "English", "IQ"],
-  participantNote: "Students of classes 3 and 4 can participate.",
-  urgency: "Limited registration",
-  strip: "2026 results continue our tradition of excellence.",
+  participantNote: "3వ మరియు 4వ తరగతి విద్యార్థులు పాల్గొనవచ్చు.",
+  urgency: "Limited Seats | పరిమిత సీట్లు",
+  strip: "Proven Results | Disciplined Coaching | Consistent Success",
 };
 
 export const whyChooseUs = [
   {
     icon: "graduation-cap",
-    title: "Experienced Faculty",
-    description: "Students learn from exam-focused teachers who balance concept clarity with disciplined practice.",
-  },
-  {
-    icon: "trophy",
-    title: "Proven Track Record",
-    description: "Visible results and achiever highlights give parents confidence that preparation is serious and structured.",
+    title: "Experienced Faculty | అనుభవజ్ఞులు",
+    description: "క్లారిటీతో బోధించే అనుభవజ్ఞులైన టీచర్స్.",
   },
   {
     icon: "clipboard-check",
-    title: "Weekly Practice Tests",
-    description: "Regular testing improves speed, accuracy and exam confidence over time.",
-  },
-  {
-    icon: "layers",
-    title: "Strong Basics Foundation",
-    description: "The academy builds fundamentals first so students perform better in competitive entrance exams.",
+    title: "Weekly Tests | వారాంత పరీక్షలు",
+    description: "రెగ్యులర్ టెస్టులతో preparation track లో ఉంటుంది.",
   },
   {
     icon: "users",
-    title: "Personal Attention",
-    description: "Focused classroom support and progress follow-up help each child improve consistently.",
+    title: "Personal Attention | వ్యక్తిగత శ్రద్ధ",
+    description: "ప్రతి విద్యార్థి progress పై ప్రత్యేక శ్రద్ధ.",
   },
   {
-    icon: "medal",
-    title: "Scholarship Opportunities",
-    description: "Talent test rewards and achievement recognition create motivation from the beginning.",
-  },
-];
-
-export const aboutAcademy = {
-  title: "About Rankers Academy Kuppam",
-  description:
-    "Rankers Academy Kuppam is a dedicated coaching institute focused on helping students prepare for Navodaya, Sainik and RMS through disciplined guidance, concept clarity, consistent testing and performance tracking. The teaching approach is designed to build confidence, strengthen basics and help parents feel that their child is in a serious academic environment.",
-  points: [
-    "Disciplined classroom routine",
-    "Concept clarity with revision cycles",
-    "Performance tracking and feedback",
-  ],
-};
-
-export const faculty = [
-  {
-    name: "Academic Mentor Team",
-    credential: "Competitive School Entrance Specialists",
-    focus: "Navodaya, Sainik and RMS preparation planning",
-    teachingStyle: "Concept clarity, worksheet practice and steady monitoring.",
-  },
-  {
-    name: "Mathematics Faculty",
-    credential: "Foundation and Exam Strategy Guidance",
-    focus: "Speed building, accuracy and problem-solving confidence",
-    teachingStyle: "Simple explanations with repeated practice and revision loops.",
-  },
-  {
-    name: "English & IQ Faculty",
-    credential: "Language and Reasoning Support",
-    focus: "Reading, logic and test confidence for entrance performance",
-    teachingStyle: "Pattern-based teaching with student-friendly doubt support.",
+    icon: "trophy",
+    title: "Proven Results | ఫలితాలు",
+    description: "మా ఫలితాలే మా విశ్వాసం అని చెప్పే achiever history.",
   },
 ];
 
 export const testimonials = [
   {
     parentName: "Lakshmi Devi",
-    studentInfo: "Parent of Harshith, Class 5",
+    studentInfo: "Harshith తల్లి, 5వ తరగతి",
     quote:
-      "We felt trust from the first interaction. The coaching style is disciplined, the tests are regular and the academy feels serious about student results.",
+      "మొదటి రోజే నమ్మకం కలిగింది. పిల్లలపై శ్రద్ధ, రెగ్యులర్ టెస్టులు, క్రమశిక్షణ మాకు చాలా నచ్చాయి.",
   },
   {
     parentName: "Ramesh Naik",
-    studentInfo: "Parent of Dheeraj, Sainik batch",
+    studentInfo: "Dheeraj తండ్రి, Sainik batch",
     quote:
-      "My son became more confident after joining. Weekly practice and personal attention made a big difference in his preparation.",
+      "నా కుమారుడిలో కాన్ఫిడెన్స్ చాలా పెరిగింది. ప్రతి వారమూ పరీక్షలు ఉండటం వల్ల ప్రిపరేషన్ సీరియస్‌గా మారింది.",
   },
   {
     parentName: "Sneha Kumari",
-    studentInfo: "Student, Navodaya coaching",
+    studentInfo: "Navodaya coaching student",
     quote:
-      "The classes are clear and easy to follow. Tests helped me understand how to write the exam with better speed and accuracy.",
+      "క్లాసులు సులభంగా అర్థమవుతాయి. టెస్టులు రాయడం వల్ల స్పీడ్, అక్యూరసీ రెండూ మెరుగయ్యాయి.",
   },
   {
     parentName: "Manjula",
-    studentInfo: "Parent of student, RMS batch",
+    studentInfo: "RMS batch parent",
     quote:
-      "The academy gives updates, guidance and a strong learning environment. It feels like the right place for focused preparation.",
+      "పేరెంట్స్‌కు అప్డేట్స్ ఇవ్వడం, పిల్లలపై శ్రద్ధ పెట్టడం ఈ అకాడమీ ప్రత్యేకతగా అనిపించింది.",
   },
 ];
 
 export const finalCta = {
-  title: "Admissions Are Open Now",
-  description:
-    "Give your child the right direction with trusted coaching, structured preparation, and proven academic results.",
+  titleEnglish: "Admissions Open Now",
+  titleTelugu: "ప్రవేశాలు ప్రారంభం",
+  descriptionEnglish: "Call now for admissions, coaching details, and talent test registration.",
+  descriptionTelugu: "మీ పిల్లల కోసం సరైన కోచింగ్ వివరాలు తెలుసుకోండి.",
 };

@@ -6,14 +6,21 @@ import { testimonials } from "../../data/content.js";
 
 export default function TestimonialsSection() {
   return (
-    <section className="section-shell scroll-mt-28" id="testimonials">
+    <section className="section-shell scroll-mt-40" id="testimonials">
       <div className="container-shell">
         <Reveal>
           <SectionHeading
             align="center"
-            description="Short, believable testimonials help the page feel local, warm and parent-trusted without becoming cluttered."
+            description="Real parent feedback builds trust. | తల్లిదండ్రుల మాటల్లో మా అకాడమీపై నమ్మకం"
             eyebrow="Testimonials"
-            title="What Parents & Students Say"
+            title={
+              <>
+                <span className="block text-xl font-semibold leading-8 text-brand-blue sm:text-2xl">
+                  What Parents Say
+                </span>
+                <span className="mt-3 block">తల్లిదండ్రుల అభిప్రాయాలు</span>
+              </>
+            }
           />
         </Reveal>
 

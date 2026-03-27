@@ -23,14 +23,21 @@ const iconMap = {
 
 export default function WhyChooseUsSection() {
   return (
-    <section className="section-shell scroll-mt-28" id="why-us">
+    <section className="section-shell scroll-mt-40" id="why-us">
       <div className="container-shell">
         <Reveal>
           <SectionHeading
             align="center"
-            description="This trust-first section speaks directly to parents who want structure, discipline, visible results and personal attention."
-            eyebrow="Why Parents Choose Us"
-            title="Why Parents Trust Rankers Academy"
+            description="Experienced faculty, tests, attention, and proven results. | పేరెంట్స్ ఎక్కువగా చూసేది ఇవే."
+            eyebrow="Why Us"
+            title={
+              <>
+                <span className="block text-xl font-semibold leading-8 text-brand-blue sm:text-2xl">
+                  Why Choose Rankers Academy
+                </span>
+                <span className="mt-3 block">ఎందుకు ర్యాంకర్స్ అకాడమీ?</span>
+              </>
+            }
           />
         </Reveal>
 

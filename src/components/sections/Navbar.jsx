@@ -23,28 +23,29 @@ export default function Navbar({
   return (
     <div className="px-4 py-3 sm:px-6">
       <div
-        className={`mx-auto max-w-7xl rounded-[1.4rem] border transition duration-300 ${
+        className={`mx-auto max-w-7xl rounded-[1.6rem] border transition duration-300 ${
           scrolled || menuOpen
             ? "border-brand-navy/10 bg-white/95 shadow-card backdrop-blur-xl"
             : "border-white/40 bg-white/80 shadow-soft backdrop-blur"
         }`}
       >
-        <div className="flex min-h-[4.6rem] items-center justify-between px-4 sm:px-6">
+        <div className="flex min-h-[4.7rem] items-center justify-between px-4 sm:px-6">
           <a className="flex items-center gap-3" href="#home">
             <div className="grid h-12 w-12 place-items-center rounded-full bg-brand-gold font-display text-lg font-bold text-brand-navy">
               RA
             </div>
-            <div>
-              <div className="text-sm font-bold uppercase tracking-[0.22em] text-brand-navy">
+            <div className="min-w-0">
+              <div className="truncate text-sm font-bold uppercase tracking-[0.22em] text-brand-navy">
                 {siteContent.shortName}
               </div>
-              <div className="text-xs text-brand-slate">
-                {siteContent.tagline} | {siteContent.focusLine}
+              <div className="max-w-[12rem] text-xs leading-5 text-brand-slate sm:max-w-none">
+                {siteContent.tagline}
+                <span className="hidden sm:inline"> | {siteContent.focusLine}</span>
               </div>
             </div>
           </a>
 
-          <nav className="hidden items-center gap-6 lg:flex">
+          <nav className="hidden items-center gap-5 xl:flex">
             {navLinks.map((link) => (
               <a
                 key={link.href}
@@ -56,7 +57,7 @@ export default function Navbar({
             ))}
           </nav>
 
-          <div className="hidden items-center gap-4 lg:flex">
+          <div className="hidden items-center gap-3 lg:flex">
             <ActionButton href={phoneLink} variant="secondary">
               Call Now
             </ActionButton>

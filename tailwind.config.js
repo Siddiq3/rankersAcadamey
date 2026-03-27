@@ -18,8 +18,8 @@ export default {
         },
       },
       fontFamily: {
-        sans: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"],
-        display: ["Playfair Display", "Georgia", "serif"],
+        sans: ["Inter", "Noto Sans Telugu", "ui-sans-serif", "system-ui", "sans-serif"],
+        display: ["Poppins", "Noto Sans Telugu", "ui-sans-serif", "system-ui", "sans-serif"],
       },
       boxShadow: {
         hero: "0 30px 90px rgba(14, 42, 71, 0.18)",

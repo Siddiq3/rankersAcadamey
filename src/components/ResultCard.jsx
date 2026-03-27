@@ -15,22 +15,28 @@ export default function ResultCard({ student, index = 0 }) {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.18),transparent_25%),radial-gradient(circle_at_bottom_right,rgba(212,164,55,0.22),transparent_24%)]" />
         <div className="relative flex h-full flex-col justify-between">
           <div className="flex items-start justify-between gap-3">
-            <div className="rounded-full border border-white/15 bg-white/10 px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-white/80">
+            <div className="rounded-full border border-white/15 bg-white/10 px-3 py-1 text-[0.68rem] font-semibold text-white/80">
               {student.program}
             </div>
-            <div className="rounded-full bg-white/10 px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-white/80">
+            <div className="rounded-full bg-white/10 px-3 py-1 text-[0.68rem] font-semibold text-white/80">
               2026
             </div>
           </div>
 
           <div className="flex items-end justify-between gap-3">
-            <div className="grid h-20 w-20 place-items-center rounded-[1.4rem] border border-white/15 bg-white/10 text-2xl font-bold backdrop-blur">
-              {student.initials}
+            <div>
+              <div className="grid h-20 w-20 place-items-center rounded-[1.4rem] border border-white/15 bg-white/10 text-2xl font-bold backdrop-blur">
+                {student.initials}
+              </div>
+              <div className="mt-3 rounded-full border border-white/12 bg-white/10 px-3 py-1 text-[0.68rem] font-semibold text-white/80">
+                ఫలితాల ప్రత్యేకత
+              </div>
             </div>
-            <div className="rounded-[1rem] border border-white/10 bg-white/10 px-3 py-2 text-right text-[0.7rem] font-medium leading-5 text-white/80">
-              Student photo
+
+            <div className="rounded-[1rem] border border-white/10 bg-white/10 px-3 py-2 text-right text-[0.72rem] font-medium leading-5 text-white/80">
+              Rankers Academy
               <br />
-              placeholder
+              విజయ గర్వం
             </div>
           </div>
         </div>
@@ -52,7 +58,7 @@ export default function ResultCard({ student, index = 0 }) {
 function MetaRow({ label, value }) {
   return (
     <div className="rounded-[1.1rem] border border-brand-navy/10 bg-brand-mist/70 px-4 py-3">
-      <div className="text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-brand-blue/80">
+      <div className="text-[0.68rem] font-semibold text-brand-blue/80">
         {label}
       </div>
       <div className="mt-2 text-sm font-semibold leading-6 text-brand-navy">{value}</div>

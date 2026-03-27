@@ -19,7 +19,7 @@ export default function LeadForm({ submitLabel = "Submit Enquiry" }) {
   const handleSubmit = (event) => {
     event.preventDefault();
     alert(
-      "Thanks! This demo form is saved only in the UI. Please call Rankers Academy at 9676356670 or 9885269211 to confirm your enquiry."
+      "ధన్యవాదాలు. ఇది ప్రస్తుతం frontend demo form మాత్రమే. దయచేసి 9676356670 లేదా 9885269211 కి కాల్ చేసి మీ enquiry ని confirm చేయండి."
     );
     setForm(initialState);
   };
@@ -29,28 +29,28 @@ export default function LeadForm({ submitLabel = "Submit Enquiry" }) {
       <Field
         name="parentName"
         onChange={handleChange}
-        placeholder="Parent name"
+        placeholder="Parent name / తల్లి లేదా తండ్రి పేరు"
         required
         value={form.parentName}
       />
       <Field
         name="phone"
         onChange={handleChange}
-        placeholder="Phone number"
+        placeholder="Phone number / మొబైల్ నంబర్"
         required
         value={form.phone}
       />
       <Field
         name="studentName"
         onChange={handleChange}
-        placeholder="Student name"
+        placeholder="Student name / విద్యార్థి పేరు"
         value={form.studentName}
       />
       <div className="grid gap-4 sm:grid-cols-2">
         <Field
           name="className"
           onChange={handleChange}
-          placeholder="Class"
+          placeholder="Class / తరగతి"
           value={form.className}
         />
         <select
@@ -70,8 +70,7 @@ export default function LeadForm({ submitLabel = "Submit Enquiry" }) {
       </button>
 
       <p className="text-xs leading-6 text-brand-slate">
-        This form keeps the current frontend-only business logic intact and is ready to connect to WhatsApp, Google
-        Sheets or a backend later.
+        మీ వివరాలు పంపిన తర్వాత మా టీమ్ కాల్ ద్వారా సంప్రదించవచ్చు. అవసరమైతే తరువాత WhatsApp లేదా backend integration సులభంగా జోడించవచ్చు.
       </p>
     </form>
   );

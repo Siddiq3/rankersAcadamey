@@ -7,7 +7,7 @@ import { scholarshipPrizes, talentTest } from "../../data/content.js";
 
 export default function ScholarshipSection({ onOpenEnquiry, phoneLink }) {
   return (
-    <section className="section-shell pt-4">
+    <section className="section-shell scroll-mt-40 pt-4" id="scholarship">
       <div className="container-shell">
         <Reveal>
           <div className="overflow-hidden rounded-[2rem] bg-gradient-to-r from-brand-navy via-brand-blue to-brand-navy p-[1px] shadow-hero">
@@ -15,17 +15,23 @@ export default function ScholarshipSection({ onOpenEnquiry, phoneLink }) {
               <div>
                 <div className="eyebrow">
                   <Award className="h-4 w-4 text-brand-gold" />
-                  {talentTest.heading}
+                  Talent Test / Scholarship
                 </div>
 
-                <h2 className="section-title mt-6">{talentTest.heading}</h2>
-                <p className="mt-4 max-w-2xl text-base leading-8 text-brand-slate sm:text-lg">
-                  {talentTest.subheading}
-                </p>
+                <h2 className="section-title mt-6">
+                  <span className="block text-xl font-semibold leading-8 text-brand-blue sm:text-2xl">
+                    {talentTest.headingEnglish}
+                  </span>
+                  <span className="mt-3 block">{talentTest.headingTelugu}</span>
+                </h2>
+                <div className="mt-4 max-w-2xl space-y-2 text-base leading-8 text-brand-slate sm:text-lg">
+                  <p className="font-semibold text-brand-navy">{talentTest.subheadingEnglish}</p>
+                  <p>{talentTest.subheadingTelugu}</p>
+                </div>
 
                 <div className="mt-6 flex flex-wrap gap-3">
                   <div className="rounded-full border border-brand-gold/30 bg-brand-gold/10 px-4 py-2 text-sm font-semibold text-brand-blue">
-                    {talentTest.date}
+                    Date: {talentTest.date}
                   </div>
                   <div className="rounded-full border border-brand-navy/10 bg-white px-4 py-2 text-sm font-semibold text-brand-blue">
                     {talentTest.urgency}
@@ -34,7 +40,7 @@ export default function ScholarshipSection({ onOpenEnquiry, phoneLink }) {
 
                 <div className="mt-8 flex flex-wrap gap-3">
                   <ActionButton as="button" onClick={onOpenEnquiry} type="button" variant="accent">
-                    Register for Talent Test
+                    Register Now | నమోదు చేసుకోండి
                   </ActionButton>
                   <ActionButton href={phoneLink} variant="secondary">
                     <Phone className="h-4 w-4" />
@@ -45,12 +51,19 @@ export default function ScholarshipSection({ onOpenEnquiry, phoneLink }) {
                 <div className="mt-8 rounded-[1.4rem] border border-brand-navy/10 bg-white/90 p-4">
                   <div className="flex items-center gap-3 text-sm font-semibold text-brand-blue">
                     <TimerReset className="h-4 w-4 text-brand-gold" />
-                    Early registration improves the chance to secure a seat and scholarship guidance.
+                    ముందుగా పేరు నమోదు చేసుకుంటే సీటు మరియు టాలెంట్ టెస్ట్ వివరాలు సులభంగా పొందవచ్చు.
                   </div>
                 </div>
               </div>
 
               <div className="grid gap-4">
+                <div className="rounded-[1.5rem] border border-brand-gold/25 bg-brand-navy px-5 py-5 text-white shadow-soft">
+                  <div className="text-sm font-medium text-white/70">Talent Test Date</div>
+                  <div className="mt-2 font-display text-4xl font-bold text-brand-gold">{talentTest.date}</div>
+                  <div className="mt-3 text-sm leading-7 text-white/75">
+                    Limited Seats | పరిమిత సీట్లు
+                  </div>
+                </div>
                 {scholarshipPrizes.map((prize) => (
                   <ScholarshipCard key={prize.title} prize={prize} />
                 ))}

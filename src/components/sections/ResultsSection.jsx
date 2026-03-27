@@ -1,21 +1,35 @@
 import React from "react";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, PhoneCall } from "lucide-react";
 import ResultCard from "../ResultCard.jsx";
 import ActionButton from "../ui/ActionButton.jsx";
 import CountUpNumber from "../ui/CountUpNumber.jsx";
 import Reveal from "../ui/Reveal.jsx";
 import SectionHeading from "../ui/SectionHeading.jsx";
-import { achievers, resultsSummary, talentTest } from "../../data/content.js";
+import { achievers, resultsSummary, siteContent, talentTest } from "../../data/content.js";
 
 export default function ResultsSection({ onOpenEnquiry }) {
+  const phoneLink = `tel:${siteContent.phones[0]}`;
+
   return (
-    <section className="section-shell scroll-mt-28" id="results">
+    <section className="section-shell scroll-mt-40" id="results">
       <div className="container-shell">
         <Reveal>
           <SectionHeading
-            description="Real student results that reflect disciplined preparation and expert guidance."
+            description={
+              <>
+                <span className="block">Real results that build trust.</span>
+                <span className="mt-2 block">మా ఫలితాలే మా విశ్వాసం</span>
+              </>
+            }
             eyebrow="Results"
-            title="Our Proud Achievers"
+            title={
+              <>
+                <span className="block text-xl font-semibold leading-8 text-brand-blue sm:text-2xl">
+                  Our Proud Achievers
+                </span>
+                <span className="mt-3 block">మా విద్యార్థుల ఫలితాలు</span>
+              </>
+            }
           />
         </Reveal>
 
@@ -46,10 +60,16 @@ export default function ResultsSection({ onOpenEnquiry }) {
         </div>
 
         <Reveal className="mt-8">
-          <ActionButton as="button" onClick={onOpenEnquiry} type="button" variant="accent">
-            Enquire for Admissions
-            <ArrowRight className="h-4 w-4" />
-          </ActionButton>
+          <div className="flex flex-wrap gap-3">
+            <ActionButton as="button" onClick={onOpenEnquiry} type="button" variant="accent">
+              Enroll Now | నమోదు చేసుకోండి
+              <ArrowRight className="h-4 w-4" />
+            </ActionButton>
+            <ActionButton href={phoneLink} variant="secondary">
+              <PhoneCall className="h-4 w-4" />
+              Call Now
+            </ActionButton>
+          </div>
         </Reveal>
       </div>
     </section>

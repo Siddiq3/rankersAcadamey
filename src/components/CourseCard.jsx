@@ -13,7 +13,7 @@ const iconMap = {
   target: Target,
 };
 
-export default function CourseCard({ course, onOpenEnquiry }) {
+export default function CourseCard({ course, onOpenEnquiry, phoneLink }) {
   const Icon = iconMap[course.icon];
 
   return (
@@ -22,8 +22,8 @@ export default function CourseCard({ course, onOpenEnquiry }) {
         <div className="grid h-12 w-12 place-items-center rounded-full bg-brand-gold/10 text-brand-gold">
           <Icon className="h-5 w-5" />
         </div>
-        <div className="rounded-full border border-brand-gold/25 bg-brand-gold/10 px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-brand-blue">
-          Premium Program
+        <div className="rounded-full border border-brand-gold/25 bg-brand-gold/10 px-3 py-1 text-[0.72rem] font-semibold text-brand-blue">
+          Complete Coaching
         </div>
       </div>
 
@@ -39,15 +39,14 @@ export default function CourseCard({ course, onOpenEnquiry }) {
         ))}
       </div>
 
-      <ActionButton
-        as="button"
-        className="mt-8 w-full"
-        onClick={onOpenEnquiry}
-        type="button"
-        variant="primary"
-      >
-        {course.cta}
-      </ActionButton>
+      <div className="mt-8 grid gap-3">
+        <ActionButton as="button" className="w-full" onClick={onOpenEnquiry} type="button" variant="primary">
+          {course.cta}
+        </ActionButton>
+        <ActionButton href={phoneLink} className="w-full" variant="secondary">
+          {course.callCta}
+        </ActionButton>
+      </div>
     </article>
   );
 }

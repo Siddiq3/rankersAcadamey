@@ -10,7 +10,7 @@ export default function TestimonialCard({ item }) {
         ))}
       </div>
 
-      <p className="mt-5 text-base leading-8 text-brand-slate">"{item.quote}"</p>
+      <p className="mt-5 text-base leading-8 text-brand-slate">{item.quote}</p>
 
       <div className="mt-6">
         <div className="font-semibold text-brand-navy">{item.parentName}</div>
