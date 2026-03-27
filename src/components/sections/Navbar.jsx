@@ -21,24 +21,26 @@ export default function Navbar({
   }, []);
 
   return (
-    <div className="px-4 py-3 sm:px-6">
+    <div
+      className={`border-b transition duration-300 ${
+        scrolled || menuOpen
+          ? "border-brand-navy/10 bg-white/95 shadow-card backdrop-blur-xl"
+          : "border-white/40 bg-white/88 shadow-soft backdrop-blur"
+      }`}
+    >
       <div
-        className={`mx-auto max-w-7xl rounded-[1.6rem] border transition duration-300 ${
-          scrolled || menuOpen
-            ? "border-brand-navy/10 bg-white/95 shadow-card backdrop-blur-xl"
-            : "border-white/40 bg-white/80 shadow-soft backdrop-blur"
-        }`}
+        className="container-shell"
       >
-        <div className="flex min-h-[4.7rem] items-center justify-between px-4 sm:px-6">
-          <a className="flex items-center gap-3" href="#home">
-            <div className="grid h-12 w-12 place-items-center rounded-full bg-brand-gold font-display text-lg font-bold text-brand-navy">
+        <div className="flex min-h-[3.6rem] items-center justify-between px-0 sm:min-h-[4.7rem]">
+          <a className="flex min-w-0 items-center gap-2.5 sm:gap-3" href="#home">
+            <div className="grid h-[2.125rem] w-[2.125rem] place-items-center rounded-full bg-brand-gold font-display text-[0.95rem] font-bold text-brand-navy sm:h-12 sm:w-12 sm:text-lg">
               RA
             </div>
             <div className="min-w-0">
-              <div className="truncate text-sm font-bold uppercase tracking-[0.22em] text-brand-navy">
+              <div className="truncate text-[0.7rem] font-bold uppercase tracking-[0.14em] text-brand-navy sm:text-sm sm:tracking-[0.22em]">
                 {siteContent.shortName}
               </div>
-              <div className="max-w-[12rem] text-xs leading-5 text-brand-slate sm:max-w-none">
+              <div className="hidden max-w-[11rem] text-[0.68rem] leading-5 text-brand-slate min-[360px]:block sm:max-w-none sm:text-xs">
                 {siteContent.tagline}
                 <span className="hidden sm:inline"> | {siteContent.focusLine}</span>
               </div>
@@ -68,11 +70,11 @@ export default function Navbar({
 
           <button
             aria-label="Toggle menu"
-            className="grid h-11 w-11 place-items-center rounded-full bg-brand-navy/5 text-brand-navy lg:hidden"
+            className="grid h-[2.125rem] w-[2.125rem] place-items-center rounded-full bg-brand-navy/5 text-brand-navy lg:hidden"
             onClick={() => setMenuOpen((current) => !current)}
             type="button"
           >
-            {menuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+            {menuOpen ? <X className="h-[1.125rem] w-[1.125rem]" /> : <Menu className="h-[1.125rem] w-[1.125rem]" />}
           </button>
         </div>
       </div>
@@ -81,28 +83,30 @@ export default function Navbar({
         {menuOpen && (
           <motion.div
             animate={{ opacity: 1, y: 0 }}
-            className="mx-auto mt-3 max-w-7xl rounded-[1.4rem] border border-brand-navy/10 bg-white p-4 shadow-card lg:hidden"
+            className="border-t border-brand-navy/10 bg-white/98 shadow-card lg:hidden"
             initial={{ opacity: 0, y: -14 }}
             exit={{ opacity: 0, y: -14 }}
             transition={{ duration: 0.24 }}
           >
-            <div className="grid gap-3">
-              {navLinks.map((link) => (
-                <a
-                  key={link.href}
-                  className="rounded-2xl border border-brand-navy/10 px-4 py-3 text-sm font-semibold text-brand-navy"
-                  href={link.href}
-                  onClick={() => setMenuOpen(false)}
-                >
-                  {link.label}
-                </a>
-              ))}
-              <ActionButton href={phoneLink} variant="secondary">
-                Call Now
-              </ActionButton>
-              <ActionButton as="button" onClick={onOpenEnquiry} type="button" variant="accent">
-                Enroll Now
-              </ActionButton>
+            <div className="container-shell py-3">
+              <div className="grid gap-3">
+                {navLinks.map((link) => (
+                  <a
+                    key={link.href}
+                    className="rounded-2xl border border-brand-navy/10 px-4 py-3 text-sm font-semibold text-brand-navy"
+                    href={link.href}
+                    onClick={() => setMenuOpen(false)}
+                  >
+                    {link.label}
+                  </a>
+                ))}
+                <ActionButton href={phoneLink} variant="secondary">
+                  Call Now
+                </ActionButton>
+                <ActionButton as="button" onClick={onOpenEnquiry} type="button" variant="accent">
+                  Enroll Now
+                </ActionButton>
+              </div>
             </div>
           </motion.div>
         )}

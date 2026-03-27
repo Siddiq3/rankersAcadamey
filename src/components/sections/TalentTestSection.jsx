@@ -98,11 +98,11 @@ export default function TalentTestSection({ onOpenEnquiry, phoneLink }) {
                 </div>
               </div>
 
-              <div className="mt-8 flex flex-wrap gap-3">
-                <ActionButton as="button" onClick={onOpenEnquiry} type="button" variant="accent">
+              <div className="mt-8 grid gap-3 sm:flex sm:flex-wrap">
+                <ActionButton className="w-full sm:w-auto" as="button" onClick={onOpenEnquiry} type="button" variant="accent">
                   Register Now | నమోదు
                 </ActionButton>
-                <ActionButton href={phoneLink} variant="secondary">
+                <ActionButton className="w-full sm:w-auto" href={phoneLink} variant="secondary">
                   <Phone className="h-4 w-4" />
                   Call Now
                 </ActionButton>

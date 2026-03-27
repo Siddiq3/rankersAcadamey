@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import FinalCTA from "./components/FinalCTA.jsx";
 import FloatingWhatsAppButton from "./components/FloatingWhatsAppButton.jsx";
+import NewsTicker from "./components/NewsTicker.jsx";
 import StickyMobileCTA from "./components/StickyMobileCTA.jsx";
 import AdmissionModal from "./components/sections/AdmissionModal.jsx";
 import ContactSection from "./components/sections/ContactSection.jsx";
@@ -14,7 +15,13 @@ import TalentTestSection from "./components/sections/TalentTestSection.jsx";
 import TestimonialsSection from "./components/sections/TestimonialsSection.jsx";
 import TopBar from "./components/sections/TopBar.jsx";
 import WhyChooseUsSection from "./components/sections/WhyChooseUsSection.jsx";
-import { siteContent } from "./data/content.js";
+import {
+  highlightTickerItems,
+  highlightTickerItemsMobile,
+  siteContent,
+  topTickerItems,
+  topTickerItemsMobile,
+} from "./data/content.js";
 
 export default function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -57,6 +64,14 @@ export default function App() {
       </header>
 
       <main>
+        <NewsTicker
+          badgeLabel="Latest Updates"
+          compactBadgeLabel="News"
+          className="pt-[6.35rem] sm:pt-[9.8rem]"
+          items={topTickerItems}
+          mobileItems={topTickerItemsMobile}
+          variant="primary"
+        />
         <HeroSection onOpenEnquiry={openEnquiry} />
         <ResultsSection onOpenEnquiry={openEnquiry} />
         <CoursesSection onOpenEnquiry={openEnquiry} phoneLink={phoneLink} />
@@ -69,6 +84,14 @@ export default function App() {
           onOpenEnquiry={openEnquiry}
           phoneLink={phoneLink}
           whatsappLink={whatsappLink}
+        />
+        <NewsTicker
+          badgeLabel="Admissions Alert"
+          compactBadgeLabel="Alert"
+          className="pb-8"
+          items={highlightTickerItems}
+          mobileItems={highlightTickerItemsMobile}
+          variant="highlight"
         />
       </main>
 

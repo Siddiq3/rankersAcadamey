@@ -217,3 +217,39 @@ export const finalCta = {
   descriptionEnglish: "Call now for admissions, coaching details, and talent test registration.",
   descriptionTelugu: "మీ పిల్లల కోసం సరైన కోచింగ్ వివరాలు తెలుసుకోండి.",
 };
+
+export const topTickerItems = [
+  "Admissions Open | ప్రవేశాలు ప్రారంభం",
+  "Talent Test on 29-03-2026 | టాలెంట్ టెస్ట్ 29-03-2026",
+  "1st Prize ₹5000 + Medal",
+  "Sainik & RMS Coaching Available",
+  "Weekly Tests | వారాంత పరీక్షలు",
+  "Proven Results | అద్భుత ఫలితాలు",
+  "Call Now: 9676356670 / 9885269211",
+];
+
+export const highlightTickerItems = [
+  "Register for Talent Test | నమోదు చేసుకోండి",
+  "Limited Seats | పరిమిత సీట్లు",
+  "Scholarship Rewards Available",
+  "RMS Selections: 34",
+  "Sainik Selections: 55",
+  "WhatsApp for Admission Details",
+  "Call Now: 9676356670 / 9885269211",
+];
+
+export const topTickerItemsMobile = [
+  "Admissions Open",
+  "Proven Results",
+  "టాలెంట్ టెస్ట్ 29-03-2026",
+  "Weekly Tests",
+  "Call: 9676356670",
+];
+
+export const highlightTickerItemsMobile = [
+  "Limited Seats",
+  "Register Now",
+  "RMS 34 Selections",
+  "Sainik 55 Selections",
+  "Call: 9676356670",
+];

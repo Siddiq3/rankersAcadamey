@@ -46,12 +46,12 @@ export default function ContactSection({
                 />
               </div>
 
-              <div className="mt-6 flex flex-wrap gap-3">
-                <ActionButton href={phoneLink} variant="primary">
+              <div className="mt-6 grid gap-3 sm:flex sm:flex-wrap">
+                <ActionButton className="w-full sm:w-auto" href={phoneLink} variant="primary">
                   <Phone className="h-4 w-4" />
                   Call Now
                 </ActionButton>
-                <ActionButton href={whatsappLink} rel="noreferrer" target="_blank" variant="whatsapp">
+                <ActionButton className="w-full sm:w-auto" href={whatsappLink} rel="noreferrer" target="_blank" variant="whatsapp">
                   <MessageCircle className="h-4 w-4" />
                   WhatsApp
                 </ActionButton>
@@ -79,7 +79,7 @@ export default function ContactSection({
 
               <div className="mt-8">
                 <div className="text-[0.72rem] font-semibold text-brand-blue/80">విభాగాలు</div>
-                <div className="mt-3 flex flex-wrap gap-3">
+                <div className="mt-3 flex flex-wrap gap-2.5 sm:gap-3">
                   {navLinks.map((link) => (
                     <a
                       key={link.href}

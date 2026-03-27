@@ -60,12 +60,12 @@ export default function ResultsSection({ onOpenEnquiry }) {
         </div>
 
         <Reveal className="mt-8">
-          <div className="flex flex-wrap gap-3">
-            <ActionButton as="button" onClick={onOpenEnquiry} type="button" variant="accent">
+          <div className="grid gap-3 sm:flex sm:flex-wrap">
+            <ActionButton className="w-full sm:w-auto" as="button" onClick={onOpenEnquiry} type="button" variant="accent">
               Enroll Now | నమోదు చేసుకోండి
               <ArrowRight className="h-4 w-4" />
             </ActionButton>
-            <ActionButton href={phoneLink} variant="secondary">
+            <ActionButton className="w-full sm:w-auto" href={phoneLink} variant="secondary">
               <PhoneCall className="h-4 w-4" />
               Call Now
             </ActionButton>
